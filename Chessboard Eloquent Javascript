@@ -1,0 +1,16 @@
+let boardSize = 8;
+let board = ''
+
+for(let counterVertical = 0; counterVertical < boardSize; counterVertical ++){
+
+  for(let counterHorizontal = 0; counterHorizontal <boardSize; counterHorizontal ++){
+    
+    if((counterVertical + counterHorizontal) %2 == 0){
+      board += '# ';
+    }
+    else board += 'O '; 
+  }
+  board = board + '\n'  
+}
+
+console.log(board);
